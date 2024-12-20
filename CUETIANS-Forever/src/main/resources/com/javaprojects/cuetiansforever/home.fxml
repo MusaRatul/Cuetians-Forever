@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="502.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaprojects.cuetiansforever.Home">
+    <children>
+        <AnchorPane prefHeight="103.0" prefWidth="669.0" style="-fx-background-color: D7E9B9;">
+            <children>
+                <Text fill="#6f1ab6" layoutX="178.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Welcome to CUETIANS-Forever Portal!!" textAlignment="CENTER">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="86.0" fitWidth="85.0" layoutX="26.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="file:/D:/personal%20projects/CUETIANS-Forever/src/cuetlogo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Button fx:id="signin" layoutX="294.0" layoutY="288.0" mnemonicParsing="false" onAction="#login" prefHeight="53.0" prefWidth="137.0" style="-fx-background-color: #89C4E1; -fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black;" text="Sign in" textAlignment="CENTER" />
+        <AnchorPane layoutY="399.0" prefHeight="103.0" prefWidth="669.0" style="-fx-background-color: D7E9B9;">
+            <children>
+                <Text fill="#ae1b8e" layoutX="29.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Registered?" textAlignment="CENTER">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Text>
+                <Button fx:id="register" layoutX="384.0" layoutY="28.0" mnemonicParsing="false" onAction="#changetoreg" prefHeight="47.0" prefWidth="253.0" style="-fx-background-color: #89C4E1; -fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black;" text="Sign Up!!!" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+          <Text fill="#ae1b8e" layoutX="160.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID:" textAlignment="CENTER">
+              <font>
+                  <Font size="23.0" />
+              </font>
+          </Text>
+          <Text fill="#ae1b8e" layoutX="172.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+              <font>
+                  <Font size="23.0" />
+              </font>
+          </Text>
+          <TextField fx:id="studentid" layoutX="287.0" layoutY="143.0" prefHeight="53.0" prefWidth="253.0" promptText="Enter Your ID" />
+          <PasswordField fx:id="password" layoutX="287.0" layoutY="212.0" prefHeight="47.0" prefWidth="253.0" promptText="Enter your password" />
+      <Label fx:id="messagelabel" layoutX="313.0" layoutY="118.0" prefHeight="17.0" prefWidth="201.0" textFill="#e40c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
